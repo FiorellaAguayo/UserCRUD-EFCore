@@ -1,0 +1,24 @@
+﻿@model WebApplication1.Models.User;
+@{
+    ViewData["Title"] = "Detalle de Usuario";
+}
+
+<h1>Usuarios con .NET 7 (.NET Core MVC)</h1>
+
+<div class="row">
+    <div class="offset-12">
+        <div class="card border">
+            <div class="card-header bg-dark">
+                <h3 class="text-white"><strong>Detalle Usuario</strong></h3>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Nombre: </strong>@Html.DisplayFor(m => m.Name)</li>
+                    <li class="list-group-item"><strong>Edad: </strong>@Html.DisplayFor(m => m.Age)</li>
+                    <li class="list-group-item"><strong>Nacinalidad: </strong>@Html.DisplayFor(m => m.Nacionality)</li>
+                </ul>
+                <a asp-controller="Home" asp-action="Index">Volver</a>
+            </div>
+        </div>
+    </div>
+</div>
